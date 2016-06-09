@@ -1,1 +1,170 @@
 @CHARSET "UTF-8";
+
+.site_width {
+	width: 100%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.main_width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: black;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	line-height: 50px;
+	color: white;
+}
+
+nav span {
+	padding-right: 5px;
+}
+.green-text {
+	color: rgb(51, 184, 153);
+}
+nav span:nth-of-type(2) {
+	color: rgb(51, 184, 153);
+	font-weight: 700;
+	padding-right: 7px;
+}
+
+.nav_bar {
+	height: 50px;
+}
+
+.nav_bar>ul {
+	float: right;
+	font-size: 15px;
+}
+
+.nav_bar>ul li {
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	min-width: 110px;
+}
+
+.nav_bar>ul li:hover .submenu, .submenu:hover {
+	display: block;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	min-width: 110px;
+	color: white;
+	background-color: black;
+	top: 50px;
+	left: -15px;
+	text-transform: none;
+	margin-top: 7px;
+	font-size: 15px;
+}
+
+.submenu ul {
+	margin: 10px 0px 5px 10px;
+	padding: 0;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid black;
+	top: -8px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+section:first-of-type {
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 42%, rgba(203, 203, 211, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+		255, 1)), color-stop(42%, rgba(255, 255, 255, 1)),
+		color-stop(100%, rgba(203, 203, 211, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 42%, rgba(203, 203, 211, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 42%, rgba(203, 203, 211, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 42%, rgba(203, 203, 211, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 42%, rgba(203, 203, 211, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#cbcbd3', GradientType=0);
+}
+section:nth-of-type {
+	background: white;
+}
+.carousel {
+	height: 450px;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+}
+.carousel_show {
+	width: 1120px;
+	height: 370px;
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0;
+}
+.carousel_show  img{ 
+	float: left;
+	
+}
+.carousel_text h1 > span{ 
+	display: inline-block;
+	font-size: 50px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 46px;
+	margin-bottom: 35px;
+	padding-right: 10px;
+}
+.carousel_text h1 > span:nth-of-type(even) { 
+	color: rgb(51, 184, 153);
+}
+.carousel > span {
+	display: inline-block;
+	font-size: 55px;
+	line-height: 450px;
+
+}
+.carousel_text {
+	text-align: center;
+	width: 500px;
+	display: inline-block;
+}
+.carousel_text p {
+	line-height: 28px;
+}
+.carousel_text a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	width: 250px;
+	height: 45px;
+	background-color: rgb(51, 184, 153);
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 45px;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
