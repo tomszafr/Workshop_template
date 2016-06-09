@@ -2,6 +2,25 @@
 body {
 	font-family: 'Raleway', sans-serif;
 }
+::-webkit-input-placeholder {
+   color: rgb(199, 199, 199); 
+   font-family: 'Raleway', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgb(199, 199, 199);   
+   font-family: 'Raleway', sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgb(199, 199, 199); 
+   font-family: 'Raleway', sans-serif; 
+}
+
+:-ms-input-placeholder {  
+   color: rgb(199, 199, 199);  
+   font-family: 'Raleway', sans-serif;
+}
 .site_width {
 	width: 100%;
 }
@@ -20,7 +39,6 @@ body {
 nav {
 	background-color: black;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 	line-height: 50px;
 	color: white;
@@ -110,7 +128,7 @@ section:first-of-type {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
 		endColorstr='#cbcbd3', GradientType=0);
 }
-section:nth-of-type(2) {
+section:nth-of-type(2n+2) {
 	background: white;
 }
 section:nth-of-type(3) {
@@ -118,7 +136,6 @@ section:nth-of-type(3) {
 }
 .carousel {
 	height: 450px;
-	font-family: 'Raleway', sans-serif;
 	position: relative;
 }
 .carousel_show {
@@ -230,7 +247,7 @@ section:nth-of-type(3) {
 .pricing {
 	padding: 25px;
 }
-.pricing > h1 {
+.main_width > h1 {
 	font-size: 28px;
 	display: block;
 	width: 340px;
@@ -355,4 +372,74 @@ section:nth-of-type(3) {
 
 .pricing_plan:nth-of-type(2) p:nth-of-type(odd) {
 	background-color: white;
+}
+.contact {
+	height: 500px;
+	position: relative;
+}
+.contact form p, .contact form div {
+	display: inline-block;
+	float: left;
+}
+.contact form input {
+	width: 730px;
+	height: 50px;
+	font-size: 36px;
+	margin: 12px 0;
+	padding: 5px 10px;
+}
+.contact form textarea {
+	height: 200px;
+	width: 730px;
+	font-size: 36px;
+	margin: 12px 0;
+	padding: 5px 10px;
+}
+.contact form input[type=submit] {
+	height: 50px;
+	width: 280px;
+	background-color: rgb(39, 199, 171);
+	border: 0;
+	border-radius: 10px;
+	line-height: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	font-size: 27px;
+	cursor: pointer;
+	margin-top: 32px;
+}
+.contact .sidebar {
+	width: 300px;
+	height: 400px;
+	vertical-align: top;
+	position: absolute;
+	right: 0;
+	top: 70px;
+	vertical-align: top;
+	margin-right: 100px;
+}
+.contact .sidebar img {
+	margin-bottom: 30px;
+}
+.contact .sidebar div > div {
+	width: 48px;
+	height: 48px;
+	background-image: url('../images/form_ok.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(139, 228, 210);
+	background-position: center center;
+	margin-right: 8px;
+	display: inline-block;
+}
+.contact .sidebar div > p {
+	display: inline-block;
+	width:230px;
+	line-height: 25px;
+	color: rgb(171, 171, 171);
+}
+.contact .sidebar div  {
+	height: 50px;
 }
