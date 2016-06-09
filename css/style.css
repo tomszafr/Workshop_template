@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
-
+body {
+	font-family: 'Raleway', sans-serif;
+}
 .site_width {
 	width: 100%;
 }
@@ -167,4 +169,57 @@ section:nth-of-type {
 	line-height: 45px;
 	text-transform: uppercase;
 	margin-top: 40px;
+}
+.pictures {
+	padding: 25px;
+}
+.pictures_box {
+	width: 375px;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+	margin-right: 31px;
+}
+.pictures_box div {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	left: 0;
+	display: block;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.5);
+	
+	font-weight: bold;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+.pictures h2 {
+	border-bottom: 6px solid rgb(51, 184, 153);
+	font-size: 15px;
+	display: block;
+	width: 130px;
+	height: 27px;
+	line-height: 35px;
+}
+#pictures_box-first {
+	background-image: url('../images/box1_img.jpg');
+	background-size: cover;
+}
+#pictures_box-second {
+	background-image: url('../images/box2_img.jpg');
+	background-size: cover;
+}
+.infobox {
+	width:375px;
+	height: 285px;
+	border: 1px solid rgb(219, 219, 219);
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px;
+	box-sizing: border-box;
+}
+.infobox p {
+	font-size: 16px;
+	margin-top: 14px;
+	color: rgb(86, 86, 86);
 }
