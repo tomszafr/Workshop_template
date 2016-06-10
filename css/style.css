@@ -376,10 +376,6 @@ section:nth-of-type(3) {
 	height: 500px;
 	position: relative;
 }
-.contact form p, .contact form div {
-	display: inline-block;
-	float: left;
-}
 .contact form input {
 	width: 770px;
 	height: 50px;
@@ -410,23 +406,14 @@ section:nth-of-type(3) {
 	margin-top: 32px;
 	padding: 0;
 }
-.contact .sidebar {
-    width: 358px;
-    height: 400px;
-    vertical-align: top;
-    position: absolute;
-    right: 0px;
-    top: 70px;
-	vertical-align: top;
+.contact form input[type=checkbox] {
+	visibility: hidden;
+	position: absolute;
 }
-.contact .sidebar img {
-	margin-bottom: 30px;
-	margin-left: 28px;
-}
-.contact .sidebar div > div {
+.contact form input[type=checkbox] + label {
 	width: 48px;
 	height: 48px;
-	background-image: url('../images/form_ok.jpg');
+	background-image: none;
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 1px solid rgb(139, 228, 210);
@@ -435,16 +422,33 @@ section:nth-of-type(3) {
 	display: inline-block;
 	box-sizing: border-box;
 }
-.contact .sidebar div > p {
+.contact form input[type=checkbox]:checked + label {
+	background-image: url('../images/form_ok.jpg');
+}
+.contact form input[type=checkbox] + label > p {
 	display: inline-block;
 	width: 300px;
-	line-height: 26px;
+	line-height: 24px;
 	color: rgb(201, 201, 201);
 	font-size: 20px;
-	padding-left: 10px;
+	padding-left: 60px;
+}
+.contact .sidebar {
+    width: 358px;
+    height: 400px;
+    vertical-align: top;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+	vertical-align: top;
+}
+.contact .sidebar img {
+	margin-bottom: 45px;
+	margin-left: 28px;
 }
 .contact .sidebar div  {
 	height: 50px;
+	display: block;
 }
 footer {
 	margin: 30px 0;
