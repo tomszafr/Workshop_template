@@ -586,7 +586,7 @@ footer p {
 .social img {
 	vertical-align: text-bottom;
 }
-.social img:last-of-type {
+.social a:last-of-type {
 	margin-right: 50px;
 }
 .social span {
