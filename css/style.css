@@ -258,7 +258,7 @@ section:nth-of-type(3) {
 	margin: 25px 0;
 }
 .pricing_plan {
-	width: 350px;
+	width: 375px;
 	height: 450px;
 	border: 2px solid rgb(194, 194, 194);
 	position: relative;
@@ -266,6 +266,7 @@ section:nth-of-type(3) {
 	background-color: rgb(249, 249, 249);
 	display: inline-block;
 	vertical-align: top;
+	box-sizing: border-box;
 }
 .pricing_plan .circle {
 	position: absolute;
@@ -350,7 +351,7 @@ section:nth-of-type(3) {
 .pricing_plan:nth-of-type(2) {
 	background-color: rgb(39, 199, 171);
 	border: 2px solid rgb(39, 199, 171);
-	margin: 50px 64px 50px 65px;
+	margin: 50px 33px 50px 33px;
 }
 .pricing_plan:nth-of-type(2) a {
 	background-color: white;
@@ -377,7 +378,7 @@ section:nth-of-type(3) {
 	position: relative;
 }
 .contact form input {
-	width: 770px;
+	width: 750px;
 	height: 50px;
 	font-size: 36px;
 	margin: 12px 0;
@@ -385,7 +386,7 @@ section:nth-of-type(3) {
 }
 .contact form textarea {
 	height: 200px;
-	width: 770px;
+	width: 750px;
 	font-size: 36px;
 	margin: 12px 0;
 	padding: 5px 10px;
@@ -438,7 +439,7 @@ section:nth-of-type(3) {
     height: 400px;
     vertical-align: top;
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 55px;
 	vertical-align: top;
 }
