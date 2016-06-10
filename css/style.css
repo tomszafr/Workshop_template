@@ -47,9 +47,6 @@ nav {
 nav span {
 	padding-right: 5px;
 }
-.green-text {
-	color: rgb(51, 184, 153);
-}
 nav span:nth-of-type(2) {
 	color: rgb(51, 184, 153);
 	font-weight: 700;
@@ -164,11 +161,12 @@ section:nth-of-type(3) {
 	color: rgb(51, 184, 153);
 	font-weight: bold;
 }
-.carousel > span {
+.carousel > a {
 	display: inline-block;
 	font-size: 55px;
 	line-height: 450px;
-
+	color: rgb(51, 184, 153);
+	text-decoration: none;
 }
 .carousel_text {
 	text-align: center;
@@ -241,8 +239,9 @@ section:nth-of-type(3) {
 }
 .infobox p {
 	font-size: 16px;
-	margin-top: 14px;
-	color: rgb(86, 86, 86);
+	margin-top: 17px;
+	line-height: 1.5;
+	color: rgb(149, 149, 149);
 }
 .pricing {
 	padding: 25px;
@@ -322,7 +321,7 @@ section:nth-of-type(3) {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	color: rgb(111, 111, 111);
+	color: rgb(145, 145, 145);
 	font-size: 21px;
 }
 .pricing_plan p:nth-of-type(odd) {
@@ -351,7 +350,7 @@ section:nth-of-type(3) {
 .pricing_plan:nth-of-type(2) {
 	background-color: rgb(39, 199, 171);
 	border: 2px solid rgb(39, 199, 171);
-	margin: 50px 65px 50px 65px;
+	margin: 50px 64px 50px 65px;
 }
 .pricing_plan:nth-of-type(2) a {
 	background-color: white;
@@ -382,7 +381,7 @@ section:nth-of-type(3) {
 	float: left;
 }
 .contact form input {
-	width: 730px;
+	width: 770px;
 	height: 50px;
 	font-size: 36px;
 	margin: 12px 0;
@@ -390,38 +389,39 @@ section:nth-of-type(3) {
 }
 .contact form textarea {
 	height: 200px;
-	width: 730px;
+	width: 770px;
 	font-size: 36px;
 	margin: 12px 0;
 	padding: 5px 10px;
 }
 .contact form input[type=submit] {
-	height: 50px;
-	width: 280px;
+	height: 65px;
+	width: 350px;
 	background-color: rgb(39, 199, 171);
 	border: 0;
 	border-radius: 10px;
-	line-height: 50px;
+	line-height: 65px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	color: white;
 	text-transform: uppercase;
-	font-size: 27px;
+	font-size: 35px;
 	cursor: pointer;
 	margin-top: 32px;
+	padding: 0;
 }
 .contact .sidebar {
-	width: 300px;
-	height: 400px;
+    width: 358px;
+    height: 400px;
+    vertical-align: top;
+    position: absolute;
+    right: 0px;
+    top: 70px;
 	vertical-align: top;
-	position: absolute;
-	right: 0;
-	top: 70px;
-	vertical-align: top;
-	margin-right: 100px;
 }
 .contact .sidebar img {
 	margin-bottom: 30px;
+	margin-left: 28px;
 }
 .contact .sidebar div > div {
 	width: 48px;
@@ -431,15 +431,45 @@ section:nth-of-type(3) {
 	background-repeat: no-repeat;
 	border: 1px solid rgb(139, 228, 210);
 	background-position: center center;
-	margin-right: 8px;
+	margin-right: 0px;
 	display: inline-block;
+	box-sizing: border-box;
 }
 .contact .sidebar div > p {
 	display: inline-block;
-	width:230px;
-	line-height: 25px;
-	color: rgb(171, 171, 171);
+	width: 300px;
+	line-height: 26px;
+	color: rgb(201, 201, 201);
+	font-size: 20px;
+	padding-left: 10px;
 }
 .contact .sidebar div  {
 	height: 50px;
+}
+footer {
+	margin: 30px 0;
+	height: 50px;
+	color: rgb(150, 150, 150);
+	line-height: 40px;
+}
+footer p {
+	display: inline-block;
+	padding-top: 5px;
+}
+.social {
+	display: inline-block;
+}
+.social img {
+	vertical-align: text-bottom;
+}
+.social img:last-of-type {
+	margin-right: 50px;
+}
+.social span {
+	text-transform: uppercase;
+	padding-left: 5px;
+	font-size: 20px;
+}
+.social span:nth-of-type(2) {
+	font-weight: bold;
 }
