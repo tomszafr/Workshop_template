@@ -30,7 +30,6 @@ body {
 .right {
 	float: right;
 }
-
 .main_width {
 	width: 1200px;
 	margin: 0 auto;
@@ -71,10 +70,10 @@ nav span:nth-of-type(2) {
 	min-width: 110px;
 }
 
-.nav_bar>ul li:hover .submenu, .submenu:hover {
+/* .nav_bar>ul li:hover .submenu, .submenu:hover {
 	display: block;
 }
-
+*/
 .submenu {
 	display: none;
 	position: absolute;
@@ -373,6 +372,125 @@ section:nth-of-type(3) {
 .pricing_plan:nth-of-type(2) p:nth-of-type(odd) {
 	background-color: white;
 }
+.ch_form {
+	height: 500px;
+}
+.ch_form h1 {
+	font-size: 20px;
+}
+.ch_form h2 {
+	font-size: 20px;
+	display: block;
+	width: 340px;
+	border-bottom: 7px solid rgb(51, 184, 153);
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: right;
+	padding-bottom: 6px;
+	color: rgb(82, 82, 82);
+	margin: 25px 0;
+}
+.ch_form .select {
+	clear: left;
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	height: 50px;
+	font-size: 32px;
+	line-height: 48px;
+	border: 2px solid rgb(39, 199, 171);
+	margin: 5px 0;
+	color: rgb(201, 201, 201);
+	padding-left: 10px;
+}
+.ch_form .select > a {
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgb(39, 199, 171);
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.ch_form .select_options {
+	position: absolute;
+	top: 50px;
+	left: -1px;
+	background-color: white;
+	z-index: 2;
+	border: 1px solid rgb(201, 201, 201);
+	width: 310px;
+}
+.select_options ul {
+	list-style: none;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.select_options ul li{
+	width: 300px;
+}
+.ch_form .checkbox {
+	clear: left;
+	width: 48px;
+	height: 48px;
+	background-image: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(139, 228, 210);
+	background-position: center center;
+	line-height: 48px;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-top: 30px;
+	font-size: 22px;
+	position: relative;
+}
+.ch_form .checkbox span {
+	position: absolute;
+	left: 66px;
+}
+.ch_form .counter {
+	clear: right;
+	width: 380px;
+	height: 175px;
+	display: inline-block;
+	position: relative;
+	top: -200px;
+	padding: 10px;
+}
+.counter table {
+	border-collapse: collapse;
+	font-size: 19px;
+	width: 370px;
+	color: rgb(153, 153, 153);
+}
+.counter table td {
+	border-spacing: 20px;
+	width: 149px;
+}
+.counter table tbody {
+	height: 135px;
+	border-bottom: 1px solid rgb(201, 201, 201);
+}
+.counter table tbody tr:first-child {
+	color: rgb(39, 199, 171);
+	font-size: 22px;
+	padding-bottom: -10px;
+}
+.counter table tr td:nth-child(even) {
+	text-align: right;
+	border-left: 1px solid rgb(201, 201, 201);
+	color: rgb(39, 199, 171);
+}
+.counter table tfoot tr td:nth-child(even) {
+	border-left: none;
+}
+.counter table tfoot td {
+	padding-top: 5px;
+	font-size: 22px;
+}
 .contact {
 	height: 500px;
 	position: relative;
@@ -478,4 +596,10 @@ footer p {
 }
 .social span:nth-of-type(2) {
 	font-weight: bold;
+}
+.hidden {
+	display: none;
+}
+.shown {
+	display: block;
 }
